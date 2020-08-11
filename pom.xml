@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.demo</groupId>
+        <artifactId>demo-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath/>
+    </parent>
+
+    <artifactId>demo-core</artifactId>
+    <version>${core.module.version}</version>
+
+    <modules>
+        <module>user</module>
+    </modules>
+
+    <!-- 基础模块版本管理 -->
+    <properties>
+        <user.module.version>1.0.0</user.module.version>
+        <core.module.version>1.0.0</core.module.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>demo-rpc</artifactId>
+                <version>${rpc.module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>demo-sdk</artifactId>
+                <version>${sdk.module.version}</version>
+            </dependency>
+
+            <!-- panda-ibatx -->
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>db-ibatx</artifactId>
+                <version>${db-ibatx.module.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>
