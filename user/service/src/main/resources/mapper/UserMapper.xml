@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.core.user.service.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.demo.core.user.common.po.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="cn_name" jdbcType="VARCHAR" property="cnName" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="bir_date" jdbcType="DATE" property="birDate" />
+    <result column="portrait" jdbcType="VARCHAR" property="portrait" />
+    <result column="is_use" jdbcType="TINYINT" property="isUse" />
+    <result column="is_del" jdbcType="TINYINT" property="isDel" />
+    <result column="attach" jdbcType="VARCHAR" property="attach" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="updater" jdbcType="VARCHAR" property="updater" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="versions" jdbcType="INTEGER" property="versions" />
+  </resultMap>
+</mapper>
