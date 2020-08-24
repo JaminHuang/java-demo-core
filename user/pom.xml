@@ -13,5 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>boot</module>
+        <module>common</module>
+        <module>service</module>
     </modules>
 </project>

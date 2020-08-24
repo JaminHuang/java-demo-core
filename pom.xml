@@ -15,7 +15,7 @@
     <version>${core.module.version}</version>
 
     <modules>
-
+        <module>user</module>
     </modules>
 
     <!-- 基础模块版本管理 -->
@@ -34,11 +34,23 @@
 
             <dependency>
                 <groupId>com.demo</groupId>
+                <artifactId>demo-core-user-common</artifactId>
+                <version>${user.module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>demo-core-user-service</artifactId>
+                <version>${user.module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.demo</groupId>
                 <artifactId>demo-sdk</artifactId>
                 <version>${sdk.module.version}</version>
             </dependency>
 
-            <!-- panda-ibatx -->
+            <!-- db-ibatx -->
             <dependency>
                 <groupId>com.demo</groupId>
                 <artifactId>db-ibatx</artifactId>
