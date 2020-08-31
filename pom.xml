@@ -53,10 +53,20 @@
             <!-- db-ibatx -->
             <dependency>
                 <groupId>com.demo</groupId>
-                <artifactId>db-ibatx</artifactId>
+                <artifactId>db-ibatx-base</artifactId>
                 <version>${db-ibatx.module.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>db-ibatx-spring</artifactId>
+                <version>${db-ibatx.module.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.demo</groupId>
+                <artifactId>db-ibatx-core</artifactId>
+                <version>${db-ibatx.module.version}</version>
             </dependency>
 
         </dependencies>
