@@ -1,7 +1,7 @@
 package com.demo.core.user.service.mapper;
 
-import com.db.ibatx.mapper.Mapper;
-import com.db.ibatx.mapper.SoftDeleteMapper;
+import com.demo.ibatx.mapper.Mapper;
+import com.demo.ibatx.mapper.SoftDeleteMapper;
 import com.demo.core.user.common.po.User;
 
 /**

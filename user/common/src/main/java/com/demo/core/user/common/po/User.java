@@ -1,6 +1,6 @@
 package com.demo.core.user.common.po;
 
-import com.db.ibatx.core.annotation.*;
+import com.demo.ibatx.core.annotation.*;
 import com.demo.sdk.page.Page;
 import java.io.Serializable;
 import java.util.Date;

@@ -1,6 +1,6 @@
 package com.demo.core.user.common.service;
 
-import com.db.ibatx.core.entity.Condition;
+import com.demo.ibatx.core.entity.Condition;
 import java.util.List;
 import java.util.Map;
 import com.demo.rpc.annotation.Remote;

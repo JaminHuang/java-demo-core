@@ -1,13 +1,13 @@
 package com.demo.core.user.service.impl;
 
-import com.db.ibatx.core.entity.Condition;
+import com.demo.ibatx.core.entity.Condition;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 import java.util.Collections;
-import com.db.ibatx.core.entity.LimitCondition;
+import com.demo.ibatx.core.entity.LimitCondition;
 import com.demo.sdk.page.Page;
 import com.demo.sdk.thread.ReqThreadLocal;
 import com.demo.sdk.util.StringUtils;

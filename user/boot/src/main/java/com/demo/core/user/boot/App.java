@@ -1,6 +1,6 @@
 package com.demo.core.user.boot;
 
-import org.mybatis.spring.annotation.MapperScan;
+import com.demo.ibatx.spring.annotation.ExtMapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableEurekaClient
 @EnableTransactionManagement
 @SpringBootApplication
-@MapperScan({"com.demo.core.user.service.mapper","com.demo.sdk.mapper"})
+@ExtMapperScan({"com.demo.core.user.service.mapper"})
 @ComponentScan(basePackages = {"com.demo"})
 public class App {
 

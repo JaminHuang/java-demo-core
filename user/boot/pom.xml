@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>com.demo</groupId>
-            <artifactId>db-ibatx-spring</artifactId>
+            <artifactId>demo-ibatx-spring</artifactId>
         </dependency>
     </dependencies>
 

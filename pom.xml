@@ -20,7 +20,7 @@
 
     <!-- 基础模块版本管理 -->
     <properties>
-        <db-ibatx.module.version>1.0.0</db-ibatx.module.version>
+        <demo-ibatx.module.version>1.0.0</demo-ibatx.module.version>
         <demo-rpc.module.version>1.0.0</demo-rpc.module.version>
         <demo-sdk.module.version>1.0.0</demo-sdk.module.version>
 
@@ -57,8 +57,8 @@
             <!-- db-ibatx -->
             <dependency>
                 <groupId>com.demo</groupId>
-                <artifactId>db-ibatx</artifactId>
-                <version>${db-ibatx.module.version}</version>
+                <artifactId>demo-ibatx</artifactId>
+                <version>${demo-ibatx.module.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
