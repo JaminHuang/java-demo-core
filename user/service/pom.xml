@@ -25,5 +25,20 @@
             <groupId>com.demo</groupId>
             <artifactId>db-ibatx-base</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>demo-rpc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>demo-sdk</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>db-ibatx-base</artifactId>
+        </dependency>
     </dependencies>
 </project>

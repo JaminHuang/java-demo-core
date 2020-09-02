@@ -21,6 +21,7 @@
         <dependency>
             <groupId>com.demo</groupId>
             <artifactId>demo-sdk</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>

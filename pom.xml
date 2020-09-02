@@ -20,6 +20,10 @@
 
     <!-- 基础模块版本管理 -->
     <properties>
+        <db-ibatx.module.version>1.0.0</db-ibatx.module.version>
+        <demo-rpc.module.version>1.0.0</demo-rpc.module.version>
+        <demo-sdk.module.version>1.0.0</demo-sdk.module.version>
+
         <user.module.version>1.0.0</user.module.version>
         <core.module.version>1.0.0</core.module.version>
     </properties>
@@ -29,7 +33,7 @@
             <dependency>
                 <groupId>com.demo</groupId>
                 <artifactId>demo-rpc</artifactId>
-                <version>${rpc.module.version}</version>
+                <version>${demo-rpc.module.version}</version>
             </dependency>
 
             <dependency>
@@ -47,26 +51,16 @@
             <dependency>
                 <groupId>com.demo</groupId>
                 <artifactId>demo-sdk</artifactId>
-                <version>${sdk.module.version}</version>
+                <version>${demo-sdk.module.version}</version>
             </dependency>
 
             <!-- db-ibatx -->
             <dependency>
                 <groupId>com.demo</groupId>
-                <artifactId>db-ibatx-base</artifactId>
+                <artifactId>db-ibatx</artifactId>
                 <version>${db-ibatx.module.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.demo</groupId>
-                <artifactId>db-ibatx-spring</artifactId>
-                <version>${db-ibatx.module.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.demo</groupId>
-                <artifactId>db-ibatx-core</artifactId>
-                <version>${db-ibatx.module.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
         </dependencies>
