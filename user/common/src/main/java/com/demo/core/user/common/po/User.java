@@ -8,10 +8,10 @@ import lombok.Data;
 import lombok.ToString;
 
 /**
- * Users and global privileges
+ * 用户表
  * 
  * @author system
- * @date 2020-08-24T15:33:26.517
+ * @date 2021-06-01T13:33:21.799
  */
 @Data
 @ToString
@@ -26,7 +26,12 @@ public class User extends Page implements Serializable {
     private Integer id;
 
     /**
-     * 性别 0未知 1男 2女
+     * 用户类型 0-未知 1-管理员 2-用户
+     */
+    private Byte type;
+
+    /**
+     *  性别 0-未知 1-男 2-女
      */
     private Byte sex;
 
@@ -36,17 +41,22 @@ public class User extends Page implements Serializable {
     private String cnName;
 
     /**
-     * 手机号
+     * 英文名
+     */
+    private String enName;
+
+    /**
+     * 手机号码
      */
     private String phone;
 
     /**
-     * 密码
+     * 邮箱地址
      */
-    private String password;
+    private String email;
 
     /**
-     * 出生日期
+     * 出生年月
      */
     private Date birDate;
 
@@ -56,20 +66,15 @@ public class User extends Page implements Serializable {
     private String portrait;
 
     /**
-     * 是否启用  0代表不可用  默认1可用
+     * 扩展字段
      */
-    private Byte isUse;
+    private String attach;
 
     /**
-     * 是否删除  0代表可用  未删除  1代表已删除 不可用 默认0
+     * 是否删除 0-未删除 1-已删除
      */
     @LogicDelete()
     private Byte isDel;
-
-    /**
-     * 拓展信息
-     */
-    private String attach;
 
     /**
      * 创建人姓名
@@ -92,11 +97,6 @@ public class User extends Page implements Serializable {
     private Date updateTime;
 
     /**
-     * 最近登录时间
-     */
-    private Date lastLoginTime;
-
-    /**
      * 数据版本号
      */
     @Version()
@@ -104,23 +104,25 @@ public class User extends Page implements Serializable {
 
     public static final String ID = "id";
 
+    public static final String TYPE = "type";
+
     public static final String SEX = "sex";
 
     public static final String CN_NAME = "cnName";
 
+    public static final String EN_NAME = "enName";
+
     public static final String PHONE = "phone";
 
-    public static final String PASSWORD = "password";
+    public static final String EMAIL = "email";
 
     public static final String BIR_DATE = "birDate";
 
     public static final String PORTRAIT = "portrait";
 
-    public static final String IS_USE = "isUse";
+    public static final String ATTACH = "attach";
 
     public static final String IS_DEL = "isDel";
-
-    public static final String ATTACH = "attach";
 
     public static final String CREATOR = "creator";
 
@@ -129,8 +131,6 @@ public class User extends Page implements Serializable {
     public static final String CREATE_TIME = "createTime";
 
     public static final String UPDATE_TIME = "updateTime";
-
-    public static final String LAST_LOGIN_TIME = "lastLoginTime";
 
     public static final String VERSIONS = "versions";
 }

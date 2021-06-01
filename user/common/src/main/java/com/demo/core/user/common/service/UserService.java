@@ -9,10 +9,10 @@ import com.demo.core.user.common.consts.Application;
 
 
 /**
- * Users and global privilegesService接口
+ * 用户表Service接口
  *
  * @author system
- * @date 2020/08/24 15:33
+ * @date 2021/06/01 13:33
  */
 @Remote(applicationName = Application.name)
 public interface UserService {
@@ -23,7 +23,7 @@ public interface UserService {
      *  @param   id  主键
      *  @return  User
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
    User get(Integer id);
 
@@ -33,7 +33,7 @@ public interface UserService {
      *  @param   user  查询条件
      *  @return  User
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     User getOne(User user);
 
@@ -43,7 +43,7 @@ public interface UserService {
      *  @param   user  新增内容
      *  @return  int
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int save(User user);
 
@@ -53,7 +53,7 @@ public interface UserService {
      *  @param   user  新增内容
      *  @return  int
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     User saveAndGet(User user);
 
@@ -63,7 +63,7 @@ public interface UserService {
      *  @param   user  更新内容
      *  @return  int
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int update(User user);
 
@@ -73,7 +73,7 @@ public interface UserService {
      *  @param   ids  主键值
      *  @return  User数组
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     List<User> listByIds(List<Integer> ids);
 
@@ -83,7 +83,7 @@ public interface UserService {
      *  @param   user  主键值
      *  @return  User数组
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     List<User> list(User user);
 
@@ -93,7 +93,7 @@ public interface UserService {
      *  @param   user  查询条件
      *  @return  int 符合条件的数量
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int count(User user);
 
@@ -103,7 +103,7 @@ public interface UserService {
      *  @param   ids  主键值
      *  @return  map  查询结果主键map
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     Map<Integer, User> mapByIds(List<Integer> ids);
 
@@ -113,7 +113,7 @@ public interface UserService {
      *  @param   condition  查询条件
      *  @return  User数组
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     List<User> listByCondition(Condition<User> condition);
 
@@ -123,7 +123,7 @@ public interface UserService {
      *  @param   condition  查询条件
      *  @return  int  符合条件的数量
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int countByCondition(Condition<User> condition);
 
@@ -133,7 +133,7 @@ public interface UserService {
      *  @param   id   数据主键
      *  @return  int  生效的数据
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int realDelete(Integer id);
     /**
@@ -142,7 +142,7 @@ public interface UserService {
      *  @param   id   数据主键
      *  @return  int  生效的数据
      *  @author  system
-     *  @date    2020/08/24 15:33
+     *  @date    2021/06/01 13:33
      */
     int softDelete(Integer id);
 }

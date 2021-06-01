@@ -5,21 +5,21 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <result column="id" jdbcType="INTEGER" property="id" />
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="TINYINT" property="type" />
     <result column="sex" jdbcType="TINYINT" property="sex" />
     <result column="cn_name" jdbcType="VARCHAR" property="cnName" />
+    <result column="en_name" jdbcType="VARCHAR" property="enName" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="bir_date" jdbcType="DATE" property="birDate" />
     <result column="portrait" jdbcType="VARCHAR" property="portrait" />
-    <result column="is_use" jdbcType="TINYINT" property="isUse" />
-    <result column="is_del" jdbcType="TINYINT" property="isDel" />
     <result column="attach" jdbcType="VARCHAR" property="attach" />
+    <result column="is_del" jdbcType="TINYINT" property="isDel" />
     <result column="creator" jdbcType="VARCHAR" property="creator" />
     <result column="updater" jdbcType="VARCHAR" property="updater" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
     <result column="versions" jdbcType="INTEGER" property="versions" />
   </resultMap>
 </mapper>

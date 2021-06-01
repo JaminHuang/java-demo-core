@@ -23,10 +23,10 @@ import com.demo.core.user.service.mapper.UserMapper;
 import com.demo.core.user.common.service.UserService;
 
 /**
- * Users and global privilegesService实现类
+ * 用户表Service实现类
  *
  * @author system
- * @date 2020/08/24 15:33
+ * @date 2021/06/01 13:33
  */
 @Service
 public class UserServiceImpl implements UserService {
