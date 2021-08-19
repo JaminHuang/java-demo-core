@@ -54,7 +54,7 @@
                 <version>${demo-sdk.module.version}</version>
             </dependency>
 
-            <!-- db-ibatx -->
+            <!-- demo-ibatx -->
             <dependency>
                 <groupId>com.demo</groupId>
                 <artifactId>demo-ibatx</artifactId>
