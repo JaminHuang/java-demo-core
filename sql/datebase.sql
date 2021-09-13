@@ -20,7 +20,7 @@ CREATE TABLE `user` (
     KEY `idx_type` (`type`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户表';
 
--- 德州记录表
+-- wpk记录表
 CREATE TABLE `wpk_detail` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `date` date DEFAULT NULL COMMENT '日期',
@@ -36,4 +36,4 @@ CREATE TABLE `wpk_detail` (
   `versions` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '数据版本号',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx_date` (`date`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COMMENT='德州记录表';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COMMENT='wpk记录表';
